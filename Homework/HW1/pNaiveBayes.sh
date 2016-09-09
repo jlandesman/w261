@@ -1,3 +1,4 @@
+
 ## pNaiveBayes.sh
 ## Author: Jake Ryland Williams
 ## Usage: pNaiveBayes.sh m wordlist
@@ -58,3 +59,5 @@ countfiles=`\ls $data.chunk.*.counts | perl -pe 's/\n/ /'`
 
 ## clean up the data chunks and temporary count files
 \rm $data.chunk.*
+echo "====== Finished==========="
+cat  $data.output
